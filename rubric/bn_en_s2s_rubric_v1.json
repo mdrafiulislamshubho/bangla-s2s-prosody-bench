@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "benchmark_id": "bn-en-s2s-prosody-v1",
+  "author": "MD Rafiul Islam Shubho",
+  "orcid": "0009-0009-9956-4511",
+  "languages": ["bn_BD", "en_US"],
+  "scale": {
+    "min": 1,
+    "max": 5,
+    "release_threshold_weighted": 4.2,
+    "hard_floor_per_dimension": 3
+  },
+  "dimensions": [
+    {
+      "id": "code_switch_intelligibility",
+      "label": "Bilingual Code-Switch Intelligibility (bn_BD <-> en_US)",
+      "weight": 0.22,
+      "criteria": "Evaluates smooth intra-sentential switching between Bengali grammar and embedded English domain terms without sudden voice-timbre resets."
+    },
+    {
+      "id": "prosody_breath_preservation",
+      "label": "Prosody & Natural Breath-Pause Cadence",
+      "weight": 0.20,
+      "criteria": "Checks authentic conversational breath gaps (200-450 ms) and natural pitch declination rather than compressed zero-gap stitching."
+    },
+    {
+      "id": "acoustic_timing_alignment",
+      "label": "Acoustic Timing & Cut-Boundary Integrity",
+      "weight": 0.18,
+      "criteria": "Verifies zero clipped initial/final plosives, stable syllable pacing, and clean turn-boundary endings."
+    },
+    {
+      "id": "bengali_phoneme_fidelity",
+      "label": "Bengali Phonological & Diacritic Fidelity",
+      "weight": 0.16,
+      "criteria": "Audits aspirated vs. unaspirated stops, retroflex articulation, and nasalized vowels in standard and Dhaka conversational registers."
+    },
+    {
+      "id": "instruction_register_match",
+      "label": "Register, Affect & Instruction Adherence",
+      "weight": 0.14,
+      "criteria": "Measures whether tone (broadcast, explanatory, calm advisory) matches prompt specification without hallucinated persona drift."
+    },
+    {
+      "id": "noise_artifact_freedom",
+      "label": "Spectral Cleanliness & Artifact Freedom",
+      "weight": 0.10,
+      "criteria": "Penalizes metallic vocoder buzz, repeated micro-stutters, or harsh digital gating noise."
+    }
+  ]
+}
