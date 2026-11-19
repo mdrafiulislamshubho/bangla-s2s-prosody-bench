@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+title: "bangla-s2s-prosody-bench: Bilingual (bn_BD / en_US) Speech-to-Speech Prosody & Creative QA Benchmark"
+message: "If you use this rubric or scorer in Speech-to-Speech or RLHF evaluation workflows, please cite MD Rafiul Islam Shubho as sole author."
+type: software
+authors:
+  - family-names: "Shubho"
+    given-names: "MD Rafiul Islam"
+    orcid: "https://orcid.org/0009-0009-9956-4511"
+    affiliation: "Vision Flow Group & University of the People"
+    email: "mdrafiulislamshubho@gmail.com"
+repository-code: "https://github.com/mdrafiulislamshubho/bangla-s2s-prosody-bench"
+url: "https://mdrafiulislamshubho.github.io/"
+version: "1.0.0"
+date-released: "2026-11-19"
+license: "MIT"
+keywords:
+  - "bangla speech-to-speech"
+  - "rlhf evaluation"
+  - "bilingual prosody"
+  - "creative qa"
+  - "code-switching audio"

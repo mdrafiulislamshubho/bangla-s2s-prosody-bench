@@ -1,0 +1,8 @@
+{
+  "code_switch_intelligibility": 4.8,
+  "prosody_breath_preservation": 4.6,
+  "acoustic_timing_alignment": 4.5,
+  "bengali_phoneme_fidelity": 5.0,
+  "instruction_register_match": 4.7,
+  "noise_artifact_freedom": 4.4
+}
