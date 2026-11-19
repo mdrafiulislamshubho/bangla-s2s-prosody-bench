@@ -1,0 +1,15 @@
+name: Benchmark Rubrics Check
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  verify-rubric:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python evaluator/prosody_scorer.py --rubric rubric/bn_en_s2s_rubric_v1.json
